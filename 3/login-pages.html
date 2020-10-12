@@ -1,9 +1,3 @@
-<?php
-if(!@include_once('LocalSettings.php')) 
-{
-header( 'Location: config/' ) ;
-}
-?>
 <!DOCTYPE html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -12,15 +6,15 @@ header( 'Location: config/' ) ;
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
-  <title>Welcome to OWASP Bricks</title>  
+  <title>OWASP Bricks Login pages</title>  
   <!-- Included CSS Files (Uncompressed) -->
   <!--
   <link rel="stylesheet" href="stylesheets/foundation.css">
   -->  
   <!-- Included CSS Files (Compressed) -->
   <link rel="stylesheet" href="stylesheets/foundation.min.css">
-  <link rel="stylesheet" href="stylesheets/app.css">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="stylesheets/app.css">
   <script src="javascripts/modernizr.foundation.js"></script>
   <!-- IE Fix for HTML5 Tags -->
   <!--[if lt IE 9]>
@@ -53,29 +47,49 @@ header( 'Location: config/' ) ;
   </div>
 
   <!-- End Header and Nav -->
- 
-  <!-- First Band (Image) -->
-
-  <div class="row">
-    <div class="twelve columns">
-      <a href="http://www.flickr.com/photos/sprengben/4315145017/" target="_blank"><img src="images/123.png" /></a>
-    </div>
-  </div>
+  <div class="row"> 
+  <div class="twelve columns">
+  <h4>Login pages</h4>
+  <p>Each login page has its own security mechanisms. Your mission is to break them and get in.<br/>
+  </p>
+  <a href="login-1/"><div class="three columns"><img class="hide-for-small" src="images/login.jpg"/>
+      <div class="panel">	  
+        <h5>Login #1</h5>
+        Basic login.
+      </div>
+    </div></a>
+  <a href="login-2/"><div class="three columns"><img class="hide-for-small" src="images/login.jpg"/>
+      <div class="panel">	  
+        <h5>Login #2</h5>
+        Javascript validation
+      </div>
+    </div></a>
+  <a href="login-3/"><div class="three columns"><img class="hide-for-small" src="images/login.jpg"/>
+      <div class="panel">	  
+        <h5>Login #3</h5>
+        Basic login.
+      </div>
+    </div></a>
+  <a href="login-4/"><div class="three columns"><img class="hide-for-small" src="images/login.jpg"/>
+      <div class="panel">	  
+        <h5>Login #4</h5>
+        Basic login.
+      </div>
+    </div></a>
+  <a href="login-5/"><div class="three columns"><img class="hide-for-small" src="images/login.jpg"/>
+      <div class="panel">	  
+        <h5>Login #5</h5>
+        Password in MD5.
+      </div>
+    </div></a>
+  <a href="login-6/"><div class="three columns"><img class="hide-for-small" src="images/login.jpg"/>
+      <div class="panel">	  
+        <h5>Login #6</h5>
+        Automatic redirect.
+      </div>
+    </div></a>
+	</div>
   
-  <div class="row">
-    <div class="twelve columns">
-      <h4>Welcome to Bricks!</h4>
-	  <p>Bricks is a web application security learning platform built on <a href="http://www.php.net/">PHP</a> and <a href="http://www.mysql.com/">MySQL</a>. The project focuses on variations of commonly seen application security issues. Each 'Brick' has some sort of security issue which can be leveraged manually or using automated software tools. The mission is to '<a href="http://owaspbricks.blogspot.com/2013/02/break-bricks.html">Break the Bricks</a>' and thus learn the various aspects of web application security.
-	  </p>
-	  <p>Bricks is a completely free and open source project brought to you by <a href="https://www.owasp.org/index.php/Main_Page">OWASP</a>. The <a href="docs/">complete documentation</a> and <a href="https://www.youtube.com/OWASPBricks">instruction videos</a> can also be accessed or downloaded for free. Bricks are classified into three different sections: <a href="docs/login-pages.html">login pages</a>, <a href="docs/file-upload-pages.html">file upload pages</a> and <a href="docs/content-pages.html">content pages</a>.
-	  </p>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="twelve columns">    
-    </div>
-  </div>  
   <!-- Footer -->
 
   <footer class="row">
@@ -91,6 +105,8 @@ header( 'Location: config/' ) ;
       </div>
     </div>
   </footer>
+
+  
 	
 	
 	
@@ -141,6 +157,6 @@ header( 'Location: config/' ) ;
   
   <!-- Initialize JS Plugins -->
   <script src="javascripts/app.js"></script>
-
+  
 </body>
 </html>

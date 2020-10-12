@@ -1,9 +1,3 @@
-<?php
-if(!@include_once('LocalSettings.php')) 
-{
-header( 'Location: config/' ) ;
-}
-?>
 <!DOCTYPE html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -12,7 +6,7 @@ header( 'Location: config/' ) ;
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
-  <title>Welcome to OWASP Bricks</title>  
+  <title>OWASP Bricks File upload pages</title>  
   <!-- Included CSS Files (Uncompressed) -->
   <!--
   <link rel="stylesheet" href="stylesheets/foundation.css">
@@ -53,29 +47,34 @@ header( 'Location: config/' ) ;
   </div>
 
   <!-- End Header and Nav -->
- 
-  <!-- First Band (Image) -->
-
-  <div class="row">
-    <div class="twelve columns">
-      <a href="http://www.flickr.com/photos/sprengben/4315145017/" target="_blank"><img src="images/123.png" /></a>
+  <div class="row"> 
+  <div class="twelve columns">
+  <h4>File Upload pages</h4>
+  <p>Each file upload page has its own security mechanisms. Some pages allows you to upload only some specific picture files. Your mission is to break them, upload shell scripts, execute them and gain access.<br/>
+  </p>
+  <a href="upload-1/"><div class="three columns"><img class="hide-for-small" src="images/upload.jpg"/>
+      <div class="panel">
+        <h5>Upload #1</h5>
+        Simple file upload.
+      </div>
     </div>
-  </div>
+    </a>
+  <a href="upload-2/"><div class="three columns"><img class="hide-for-small" src="images/upload.jpg"/>
+      <div class="panel">
+        <h5>Upload #2</h5>
+        Content type verification
+      </div>
+    </div>
+    </a>
+  <a href="upload-3/"><div class="three columns"><img class="hide-for-small" src="images/upload.jpg"/>
+      <div class="panel">
+        <h5>Upload #3</h5>
+        Extension verification
+      </div>
+    </div>
+    </a>
+	</div>
   
-  <div class="row">
-    <div class="twelve columns">
-      <h4>Welcome to Bricks!</h4>
-	  <p>Bricks is a web application security learning platform built on <a href="http://www.php.net/">PHP</a> and <a href="http://www.mysql.com/">MySQL</a>. The project focuses on variations of commonly seen application security issues. Each 'Brick' has some sort of security issue which can be leveraged manually or using automated software tools. The mission is to '<a href="http://owaspbricks.blogspot.com/2013/02/break-bricks.html">Break the Bricks</a>' and thus learn the various aspects of web application security.
-	  </p>
-	  <p>Bricks is a completely free and open source project brought to you by <a href="https://www.owasp.org/index.php/Main_Page">OWASP</a>. The <a href="docs/">complete documentation</a> and <a href="https://www.youtube.com/OWASPBricks">instruction videos</a> can also be accessed or downloaded for free. Bricks are classified into three different sections: <a href="docs/login-pages.html">login pages</a>, <a href="docs/file-upload-pages.html">file upload pages</a> and <a href="docs/content-pages.html">content pages</a>.
-	  </p>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="twelve columns">    
-    </div>
-  </div>  
   <!-- Footer -->
 
   <footer class="row">
@@ -91,6 +90,8 @@ header( 'Location: config/' ) ;
       </div>
     </div>
   </footer>
+
+  
 	
 	
 	
@@ -141,6 +142,6 @@ header( 'Location: config/' ) ;
   
   <!-- Initialize JS Plugins -->
   <script src="javascripts/app.js"></script>
-
+  
 </body>
 </html>

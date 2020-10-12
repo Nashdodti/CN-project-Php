@@ -1,9 +1,3 @@
-<?php
-if(!@include_once('LocalSettings.php')) 
-{
-header( 'Location: config/' ) ;
-}
-?>
 <!DOCTYPE html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -12,7 +6,7 @@ header( 'Location: config/' ) ;
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
-  <title>Welcome to OWASP Bricks</title>  
+  <title>Break the Bricks</title>  
   <!-- Included CSS Files (Uncompressed) -->
   <!--
   <link rel="stylesheet" href="stylesheets/foundation.css">
@@ -53,29 +47,37 @@ header( 'Location: config/' ) ;
   </div>
 
   <!-- End Header and Nav -->
- 
-  <!-- First Band (Image) -->
-
-  <div class="row">
+  
+   <div class="row">
     <div class="twelve columns">
-      <a href="http://www.flickr.com/photos/sprengben/4315145017/" target="_blank"><img src="images/123.png" /></a>
+      <h4>Bricks!</h4>
+	  <p>Bricks are classified into three different sections: login pages, file upload pages and content pages.
+	  </p>
     </div>
   </div>
   
-  <div class="row">
-    <div class="twelve columns">
-      <h4>Welcome to Bricks!</h4>
-	  <p>Bricks is a web application security learning platform built on <a href="http://www.php.net/">PHP</a> and <a href="http://www.mysql.com/">MySQL</a>. The project focuses on variations of commonly seen application security issues. Each 'Brick' has some sort of security issue which can be leveraged manually or using automated software tools. The mission is to '<a href="http://owaspbricks.blogspot.com/2013/02/break-bricks.html">Break the Bricks</a>' and thus learn the various aspects of web application security.
-	  </p>
-	  <p>Bricks is a completely free and open source project brought to you by <a href="https://www.owasp.org/index.php/Main_Page">OWASP</a>. The <a href="docs/">complete documentation</a> and <a href="https://www.youtube.com/OWASPBricks">instruction videos</a> can also be accessed or downloaded for free. Bricks are classified into three different sections: <a href="docs/login-pages.html">login pages</a>, <a href="docs/file-upload-pages.html">file upload pages</a> and <a href="docs/content-pages.html">content pages</a>.
-	  </p>
+  
+  <div class="row"> 
+	<div class="four columns">
+<a href="login-pages.html"><img src="images/login.jpg"/></a>
+	  <h5>Login pages</h5>
+  <p>Each login page has its own security mechanisms. Your mission is to break them and get in.<br/>
+  </p>
     </div>
-  </div>
-
-  <div class="row">
-    <div class="twelve columns">    
+	<div class="four columns">
+<a href="file-upload-pages.html"><img src="images/upload.jpg"/></a>
+	<h5>File Upload pages</h5>
+  <p>Each file upload page has its own security mechanisms. Some pages allows you to upload only some specific picture files. Your mission is to break them, upload shell scripts, execute them and gain access.<br/>
+  </p>
     </div>
-  </div>  
+	<div class="four columns">
+<a href="content-pages.html"><img src="images/content.jpg"/></a>
+	<h5>Content pages</h5>
+  <p>Content pages displays contents based on user inputs. In some cases they have their own security mechanisms too. Your mission is to break in, inject you code, execute it and gain access.<br/>
+  </p>
+    </div>
+   </div>
+  
   <!-- Footer -->
 
   <footer class="row">
@@ -91,6 +93,8 @@ header( 'Location: config/' ) ;
       </div>
     </div>
   </footer>
+
+  
 	
 	
 	
@@ -141,6 +145,6 @@ header( 'Location: config/' ) ;
   
   <!-- Initialize JS Plugins -->
   <script src="javascripts/app.js"></script>
-
+  
 </body>
 </html>
